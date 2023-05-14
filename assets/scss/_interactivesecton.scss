@@ -1,0 +1,67 @@
+#hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  .all-cards {
+    position: relative;
+    .card-img {
+      img {
+        height: 450px;
+      }
+    }
+    .card-context {
+      padding: 60px 0 0 50px;
+      @include flexBox();
+      justify-content: center;
+      flex-direction: column;
+      height: 300px;
+      width: 540px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 34%;
+      left: 70%;
+      .heading {
+        line-height: 55px;
+        text-align: center;
+        font-size: 48px;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .info-card {
+        text-align: center;
+        color: #8c8c8c;
+        font-family: "Alata", sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    .all-cards {
+      .card-context {
+        position: static;
+        width: 100%;
+        height: auto;
+        left: 0;
+        padding: 20px;
+        .heading {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 778px) {
+    .all-cards {
+      .card-img {
+        img {
+          width: 300px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

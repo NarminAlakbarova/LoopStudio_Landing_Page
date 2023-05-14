@@ -1,0 +1,93 @@
+.cards-section {
+  #text-btn {
+    @include flexBox();
+    .text {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 48px;
+    }
+    .btn {
+      @extend %primary_button;
+    }
+  }
+
+  .cards {
+    position: relative;
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+    img {
+      transition: filter 0.5s ease;
+      &:hover {
+        filter: opacity(50%);
+        cursor: pointer;
+      }
+    }
+    .context-img {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      p {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 32px;
+        color: white;
+        line-height: normal;
+      }
+    }
+  }
+  #btn2 {
+    display: none;
+    .btn2 {
+      @extend %primary_button;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    #btn2 {
+      display: block;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    #text-btn {
+      display: block;
+      .text {
+        font-size: 30px;
+      }
+      .btn {
+        display: none;
+      }
+    }
+    .all-row {
+      .cards {
+        .desktop {
+          display: none !important;
+        }
+        .mobile {
+          display: block;
+          width: 300px !important;
+        }
+        .context-img {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 778px) {
+    @include flexBox();
+    justify-content: center;
+    flex-direction: column;
+    .all-row {
+      @include flexBox();
+      justify-content: center;
+      flex-direction: column;
+    }
+    #btn2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
