@@ -34,7 +34,7 @@ header {
       display: none;
       z-index: 6;
     }
-    @media only screen and (max-width: 778px) {
+    @media only screen and (max-width: 991px) {
       nav {
         display: none;
         position: absolute;
@@ -78,9 +78,10 @@ header {
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 991px) {
       margin: 0 auto;
       text-align: center;
+      padding-top: 50px;
       @include flexBox();
       justify-content: center;
       margin-top: 80px;
@@ -96,7 +97,7 @@ header {
         }
       }
     }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 767px) {
       .text {
         width: 450px;
         height: 250px;

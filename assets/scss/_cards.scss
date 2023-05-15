@@ -43,7 +43,7 @@
       @extend %primary_button;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 991px) {
     #btn2 {
       display: block;
       margin-top: 50px;
@@ -54,6 +54,7 @@
       display: block;
       .text {
         font-size: 30px;
+        margin-top: 50px;
       }
       .btn {
         display: none;
@@ -76,10 +77,12 @@
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
+    padding-top: 80px;
     @include flexBox();
     justify-content: center;
     flex-direction: column;
+  
     .all-row {
       @include flexBox();
       justify-content: center;

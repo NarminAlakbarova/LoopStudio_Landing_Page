@@ -34,18 +34,17 @@
       }
     }
   }
-  @media only screen and (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
+  @media only screen and (max-width: 991px) {
     flex-direction: column;
-    height: 100vh;
     margin: 0 auto;
     text-align: center;
+    padding-top: 100px;
+    height: 70vh;
     .all-cards {
-    display: flex;
-    flex-direction: column;
-      .card-img{
-        img{
+      display: flex;
+      flex-direction: column;
+      .card-img {
+        img {
           width: 600px;
           height: 450px;
         }
@@ -62,7 +61,8 @@
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
+    height: 70vh;
     .all-cards {
       .card-img {
         img {
@@ -70,8 +70,8 @@
           height: 250px;
         }
       }
-      .card-context{
-        .heading{
+      .card-context {
+        .heading {
           line-height: normal;
         }
       }

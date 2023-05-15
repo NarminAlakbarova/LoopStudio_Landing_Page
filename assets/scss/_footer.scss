@@ -30,10 +30,13 @@ footer {
           }
         }
       }
+      p{
+        color: rgb(105, 103, 103);
+      }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 991px) {
     .footer {
       flex-direction: column;
       justify-content: center;
